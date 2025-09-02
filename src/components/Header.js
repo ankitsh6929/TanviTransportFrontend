@@ -90,8 +90,8 @@ export default function Header() {
             lineHeight: "20px",
           }}
         >
-          <span>📞 6901244444</span>
-          <span>📞 9864535143</span>
+          <span><strong>📞 6901244444</strong></span>
+          <span><strong>📞 9864535143</strong></span>
         </div>
       </div>
     </header>
