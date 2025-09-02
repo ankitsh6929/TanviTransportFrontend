@@ -1,3 +1,4 @@
+// src/pages/RegionsGrid.jsx
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -9,8 +10,47 @@ const regions = {
   Tripura: ["Packers and Movers in Dhalai", "Packers and Movers in Ambassa", "Packers and Movers in Sepahijala", "Packers and Movers in Khowai"],
   "Arunachal Pradesh": ["Packers and Movers in Anini", "Packers and Movers in Kurung Kumey", "Packers and Movers in Koloriang", "Packers and Movers in Namsai"],
   Sikkim: ["Packers and Movers in East Sikkim", "Packers and Movers in Gangtok", "Packers and Movers in North Sikkim", "Packers and Movers in Mangan"],
-  Assam: ["Packers and Movers in Baksa", "Packers and Movers in Mushalpur", "Packers and Movers in Barpeta", "Packers and Movers in Biswanath"],
-  Guwahati: ["Packers and Movers in Ambikagiri Nagar", "Packers and Movers in Ambari", "Packers and Movers in Adabari", "Packers and Movers in Amingaon"],
+
+  // ✅ Assam completely replaced by your full list
+  Assam: [
+    "Packers and Movers in Guwahati",
+    "Packers and Movers in Jorabat",
+    "Packers and Movers in Sonapur",
+    "Packers and Movers in Khetri",
+    "Packers and Movers in Jagiroad",
+    "Packers and Movers in Maligaon",
+    "Packers and Movers in Nagaon",
+    "Packers and Movers in Jorhat",
+    "Packers and Movers in Numaligarh",
+    "Packers and Movers in Sivasagar",
+    "Packers and Movers in Dibrugarh",
+    "Packers and Movers in Tinsukia",
+    "Packers and Movers in Duliajan",
+    "Packers and Movers in Digboi",
+    "Packers and Movers in Namrup",
+    "Packers and Movers in Naharkatia",
+    "Packers and Movers in Tezpur",
+    "Packers and Movers in Mirza",
+    "Packers and Movers in Mangaldai",
+    "Packers and Movers in Rangia",
+    "Packers and Movers in Nalbari",
+    "Packers and Movers in Barpeta",
+    "Packers and Movers in Bongaigaon",
+    "Packers and Movers in Kokrajhar",
+    "Packers and Movers in Dhubri",
+    "Packers and Movers in Goalpara",
+    "Packers and Movers in Biswanath Chariali",
+    "Packers and Movers in Hojai",
+    "Packers and Movers in Lanka",
+    "Packers and Movers in Lumding",
+    "Packers and Movers in Maibong",
+    "Packers and Movers in Lakhipur",
+    "Packers and Movers in North Lakhimpur",
+    "Packers and Movers in Changsari",
+    "Packers and Movers in Dhekiajuli",
+  ],
+
+  // Removed a separate "Guwahati" section; it's now a row under Assam.
   Manipur: ["Packers and Movers in Bishnupur", "Packers and Movers in Churachandpur", "Packers and Movers in Chandel", "Packers and Movers in Imphal East"],
 };
 
@@ -38,13 +78,7 @@ export default function RegionsGrid() {
       >
         {Object.entries(regions).map(([region, locations]) => (
           <div key={region} style={cardStyle}>
-            <div
-              style={{
-                fontWeight: 700,
-                fontSize: "17px",
-                marginBottom: "8px",
-              }}
-            >
+            <div style={{ fontWeight: 700, fontSize: "17px", marginBottom: "8px" }}>
               {region}
             </div>
             <ul style={{ listStyle: "none", margin: 0, padding: 0 }}>
@@ -61,12 +95,8 @@ export default function RegionsGrid() {
                       color: "#333",
                       transition: "background 0.18s",
                     }}
-                    onMouseOver={(e) =>
-                      (e.currentTarget.style.background = "#e2f0fb")
-                    }
-                    onMouseOut={(e) =>
-                      (e.currentTarget.style.background = "transparent")
-                    }
+                    onMouseOver={(e) => (e.currentTarget.style.background = "#e2f0fb")}
+                    onMouseOut={(e) => (e.currentTarget.style.background = "transparent")}
                   >
                     {loc}
                   </Link>
