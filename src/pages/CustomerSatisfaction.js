@@ -13,21 +13,21 @@ export default function CustomerSatisfaction() {
   const testimonials = [
     {
       quote:
-        "I am highly impressed with the professionalism and passion of people of TTC Packers and Movers. Recommended to others also.",
-      name: "R. Shrinivasan",
-      city: "Bhopal",
+        "I am truly impressed by the professionalism and passion demonstrated by the team at TTC Packers and Movers. I highly recommend their services to others as well.",
+      name: "V.k Biswas",
+      city: "Guwahati, Assam",
     },
     {
       quote:
-        "The staff is amazing! Very helpful and considerate with a sense of urgency & Loads are 99% on time. Thank You TTC Packers and Movers!",
-      name: "Vikas Jana",
-      city: "Gwalior",
+        "The staff is amazing—very helpful and considerate, always responding with a sense of urgency. Deliveries are 99% on time. Thank you, TTC Packers and Movers!",
+      name: "Ajit Kumar",
+      city: "Ajnala, Punjab",
     },
     {
       quote:
-        "I have never ever seen this kind of reliability and expertise in the packing and moving companies. I have used their satisfactory packers and movers services.",
-      name: "Rajkumar Pandey",
-      city: "Pune",
+        "I have never seen such reliability and expertise in any packing and moving company before. I have personally experienced their highly satisfactory packers and movers services.",
+      name: "Abhishek Das",
+      city: "Guwahati, Assam",
     },
   ];
 
