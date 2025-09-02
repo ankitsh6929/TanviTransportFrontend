@@ -3,15 +3,98 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const regions = {
-  India: ["Packers and Movers in Delhi", "Packers and Movers in Gurugram", "Packers and Movers in Noida", "Packers and Movers in Ghaziabad"],
-  Nagaland: ["Packers and Movers in Kohima", "Packers and Movers in Longleng", "Packers and Movers in Mokokchung", "Packers and Movers in Mon"],
-  Mizoram: ["Packers and Movers in Aizawl", "Packers and Movers in Kolasib", "Packers and Movers in Lawngtlai", "Packers and Movers in Lunglei"],
-  Meghalaya: ["Packers and Movers in Jowai", "Packers and Movers in Khiehriat", "Packers and Movers in Shillong", "Packers and Movers in Nongpoh"],
-  Tripura: ["Packers and Movers in Dhalai", "Packers and Movers in Ambassa", "Packers and Movers in Sepahijala", "Packers and Movers in Khowai"],
-  "Arunachal Pradesh": ["Packers and Movers in Anini", "Packers and Movers in Kurung Kumey", "Packers and Movers in Koloriang", "Packers and Movers in Namsai"],
-  Sikkim: ["Packers and Movers in East Sikkim", "Packers and Movers in Gangtok", "Packers and Movers in North Sikkim", "Packers and Movers in Mangan"],
+  India: [
+    "Packers and Movers in Delhi",
+    "Packers and Movers in Gurugram",
+    "Packers and Movers in Noida",
+    "Packers and Movers in Ghaziabad",
+  ],
 
-  // ✅ Assam completely replaced by your full list
+  Nagaland: [
+    "Packers and Movers in Dimapur",
+    "Packers and Movers in Kiphire",
+    "Packers and Movers in Kohima",
+    "Packers and Movers in Longleng",
+    "Packers and Movers in Mokokchung",
+    "Packers and Movers in Peren",
+    "Packers and Movers in Phek",
+    "Packers and Movers in Tuensang",
+    "Packers and Movers in Wokha",
+    "Packers and Movers in Zunheboto",
+  ],
+
+  Meghalaya: [
+    "Packers and Movers in Shillong",
+    "Packers and Movers in Tura",
+    "Packers and Movers in Jowai",
+    "Packers and Movers in Umshong",
+    "Packers and Movers in Ladrymbai",
+    "Packers and Movers in Mendipathar",
+    "Packers and Movers in Rongjeng",
+    "Packers and Movers in Jorabat",
+    "Packers and Movers in Byrnihat",
+    "Packers and Movers in Nongstong",
+  ],
+
+  "Arunachal Pradesh": [
+    "Packers and Movers in Naharlagun",
+    "Packers and Movers in Itanagar",
+    "Packers and Movers in Ranki",
+    "Packers and Movers in Tippi Camp",
+    "Packers and Movers in New Palin",
+    "Packers and Movers in Seppa",
+    "Packers and Movers in Khellong",
+    "Packers and Movers in Megalong",
+    "Packers and Movers in Kheti",
+    "Packers and Movers in Nafra",
+    "Packers and Movers in Yaekuli",
+    "Packers and Movers in Bordumsa",
+    "Packers and Movers in Bhanderdawa",
+    "Packers and Movers in Chimpy",
+    "Packers and Movers in Hapoli",
+    "Packers and Movers in Kimin",
+    "Packers and Movers in Tenga Valley",
+    "Packers and Movers in Aalo",
+    "Packers and Movers in Nirjuli",
+    "Packers and Movers in Upper Subansiri",
+    "Packers and Movers in West Kameng",
+    "Packers and Movers in Siang",
+    "Packers and Movers in Namsai",
+    "Packers and Movers in Bomdila",
+    "Packers and Movers in Daporijo",
+    "Packers and Movers in Roing",
+    "Packers and Movers in Tezu",
+    "Packers and Movers in Tawang",
+    "Packers and Movers in Ziro",
+    "Packers and Movers in Lohit",
+    "Packers and Movers in Pasighat",
+    "Packers and Movers in Yupia",
+    "Packers and Movers in Papum Pare",
+    "Packers and Movers in Lower Subansiri",
+  ],
+
+  Mizoram: [
+    "Packers and Movers in Aizawl",
+    "Packers and Movers in Kolasib",
+    "Packers and Movers in Lawngtlai",
+    "Packers and Movers in Lunglei",
+  ],
+
+  Tripura: [
+    "Packers and Movers in Dhalai",
+    "Packers and Movers in Ambassa",
+    "Packers and Movers in Sepahijala",
+    "Packers and Movers in Khowai",
+  ],
+
+  Sikkim: [
+    "Packers and Movers in East Sikkim",
+    "Packers and Movers in Gangtok",
+    "Packers and Movers in North Sikkim",
+    "Packers and Movers in Mangan",
+  ],
+
+  // ✅ Assam (already replaced by your full list)
   Assam: [
     "Packers and Movers in Guwahati",
     "Packers and Movers in Jorabat",
@@ -50,8 +133,12 @@ const regions = {
     "Packers and Movers in Dhekiajuli",
   ],
 
-  // Removed a separate "Guwahati" section; it's now a row under Assam.
-  Manipur: ["Packers and Movers in Bishnupur", "Packers and Movers in Churachandpur", "Packers and Movers in Chandel", "Packers and Movers in Imphal East"],
+  Manipur: [
+    "Packers and Movers in Bishnupur",
+    "Packers and Movers in Churachandpur",
+    "Packers and Movers in Chandel",
+    "Packers and Movers in Imphal East",
+  ],
 };
 
 export default function RegionsGrid() {
@@ -95,8 +182,12 @@ export default function RegionsGrid() {
                       color: "#333",
                       transition: "background 0.18s",
                     }}
-                    onMouseOver={(e) => (e.currentTarget.style.background = "#e2f0fb")}
-                    onMouseOut={(e) => (e.currentTarget.style.background = "transparent")}
+                    onMouseOver={(e) =>
+                      (e.currentTarget.style.background = "#e2f0fb")
+                    }
+                    onMouseOut={(e) =>
+                      (e.currentTarget.style.background = "transparent")
+                    }
                   >
                     {loc}
                   </Link>
